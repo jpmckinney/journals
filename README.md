@@ -16,7 +16,7 @@ Convert the PDFs to text files. The PDFs are not distributed with this repositor
 
 ## Correct text
 
-`pdftotext` sometimes chokes on diacritics including `˙`, `´` and `ˇ`.
+`pdftotext` sometimes adds unnecessary whitespace after diacritics including `˙`, `´` and `ˇ`.
 
 In `ICMPC10_absbook.txt`, correct the text near:
 
