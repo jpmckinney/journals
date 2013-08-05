@@ -172,7 +172,7 @@ class ICMPC2011(PDFParser):
         "Authors": authors,
         "Abstract": abstract,
         "Place": "ICMPC",
-        "Year": 2011,
+        "Year": 2010,
       })
 
     return abstracts
