@@ -6,6 +6,11 @@ Convert the PDFs to text files:
     ./pdftotext.sh
     cd ..
 
+In `ICMPC10_absbook.txt`, correct the words that are broken onto two lines:
+
+    Psychoacoustical and Cognitive Basis of Sutartin...
+    Marek Fran...
+
 Extract the abstracts from the text files:
 
-    ./extract_abstracts.py
+    python extract_abstracts.py
