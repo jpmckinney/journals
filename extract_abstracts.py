@@ -263,12 +263,6 @@ class ICMPC11(ICMPCParser):
       # Remove empty lines from the title and authors.
       title_and_authors = [line for line in text[document_indices[i]:abstract_indices[i] - 1] if line]
 
-      # Special case. Jakub Sowiński's last name is split onto two lines.
-      index = next((index for index, line in enumerate(title_and_authors) if re.search(u" ́\Z", line)), None)
-      if index:
-        title_and_authors[index] = title_and_authors[index][:-2] + title_and_authors[index + 1]
-        del title_and_authors[index + 1]
-
       # @note We can't use line length as a criteria, because the shortest first
       # line of a multiline title is 33 characters ("Are Bodily Responses
       # Pre-Musical?"), and the longest one-line titles are 53 characters
